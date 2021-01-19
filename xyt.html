@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="薛炎藤">
+		<meta name="description" content="薛炎藤，女，汉族">
+		<title>薛炎藤_百度百科</title>
+		<style type="text/css">
+			*{
+				
+				padding: 0px;
+				margin: 0px;
+				
+				
+			}
+			body{
+				background-color:rgb(245,245,245);
+			}
+			.bannerimage{position: absolute;top: 400px;right: 30px;
+				}
+			.bannerimage{width:270px;height:300px;float:left;background-size:100% 100%;color:#fff;box-shadow: 0 0 12px 2px  #142732;}
+			.box{width:270px;height:300px;margin:0px auto;overflow: hidden;}
+			/* box的宽度为img的个数乘以bannerimage的宽度*/
+			.img-g{width:1890px;height:300px;position:relative;}
+			.img-g img{float:left;width:270px;height:300px;}
+			.button-g{position:relative;top:-35px;text-align:center;}
+			.button-g span{display:inline-block;position:relative;z-index:10;width:10px;height:10px;margin:0 5px;border-radius:100%;cursor: pointer;}
+			#all{
+				width: 1200px;
+				height: 2000px;
+				
+				position: relative;
+				left: 140px;
+				top: 20px;
+				background-color: #FFFFFF;
+			}
+			#header{
+				width: 280px;
+				height: 50px;
+				
+				position: absolute;
+				top: 40px;
+				left: 30px;
+				letter-spacing: 2px;
+				
+			}
+			#header>h1{
+				float: left;
+				position: absolute;
+				top: 8px;
+			
+			}
+			#header>h3{
+				float: right;
+				
+			}
+			#text{
+				width: 800px;
+				height: 400px;
+				position: absolute;
+				left: 30px;
+				top: 120px ;
+				
+				text-indent: 2em;
+				letter-spacing: 2px;
+			}
+			#why{
+				display: block;
+				text-indent: 2em;
+				letter-spacing: 2px;
+			}
+			#picture{
+				width: 270px;
+				height: 300px;
+				position: absolute;
+				top: 30px;
+				right: 30px;
+			}
+			#picture img{
+				width: 270px;
+				height: 300px;
+			}
+			#link{
+				
+				position: absolute;
+				top: 530px;
+				left: 30px;
+				
+			}
+				
+			#link img{
+				width: 800px;
+				height: 120px;
+			}
+			#talk{
+				width: 270px;
+				position: absolute;
+				top: 350px;
+				right: 30px;
+			}
+			#talk img{
+				width: 64px;
+				height: 26px;
+			}
+			#talk span{
+				display: inline-block;
+				font-size: 12px;
+				color: #999;
+				margin-left: 6px;
+				margin-top: 1px;
+			}
+			#relavtion{
+				color: #FFF;
+				background: #71b3f7;
+				padding: 0 6px;
+				position: absolute;
+				top: 690px;
+				left: 30px;
+			}
+			#table{
+				width: 395px;
+				position: absolute;
+				top: 900px;
+				float: left;
+				
+			}
+			#tableTwo{
+				width: 395px;
+				position: absolute;
+				top: 900px;
+				left: 450px;
+				
+				
+			}
+			#table>.left>table{
+				
+				padding: 0 5px 0 12px;
+				font-weight: 700;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				word-wrap: normal;
+				color: #999;    
+				border-spacing: 40px 10px;
+			   
+			}
+			
+			
+		
+			#tableTwo>.right>table{
+				
+				padding: 0 5px 0 12px;
+				font-weight: 700;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				word-wrap: normal;
+				color: #999;    
+				border-spacing: 40px 10px;
+				    
+			}
+			#didi{
+				position: absolute;
+				top: 1300px;
+				left: 30px;
+			}
+			#therepicture{
+				position: absolute;
+				top: 730px;
+				left: 30px;
+			}
+			#therepicture>img{
+				width: 82px;
+				height:82px;
+				
+				
+			}
+			#weizhi{
+				position: relative;
+				top: 820px;
+				left: 60px;
+				
+			}
+			#mother{
+				position: relative;
+				top: 0px;
+				left: -13px;
+				color: #333;
+				line-height: 30px;
+				letter-spacing: 1px;
+				font-size: 80%;
+
+				
+			}
+			#mother>i{
+				color: #136ec2;
+				
+			}
+			#borther{
+				position: relative;
+				top: 0px;
+				left: 10px;
+				font-size: 80%;
+				line-height: 30px;
+				letter-spacing: 1px;
+			}
+			#borther>i{
+				color: #136ec2;
+			}
+			
+			
+		</style>
+		<script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function () {
+				    // 实现自动播放
+					var p=document.getElementsByClassName('img-g')[0];
+					var button=document.querySelectorAll('.button-g span')
+					// 设置3秒播放
+					window.timer=setInterval(move,3000);
+					// 轮播设置
+					function move(){
+					    // bannerimage的宽度乘以图片的个数
+						if(parseInt(p.style.left)>-1620){
+						    // 和bannerimage的宽度保持一致即可：700
+							p.style.left=parseInt(p.style.left)-270+'px'
+							p.style.transition='left 1s';
+							tog(-Math.round(parseInt(p.style.left)/270))
+							if(parseInt(p.style.left)<=-1650){
+								setTimeout(function(){
+									tog(0)
+									p.style.left='0px'
+									p.style.transition='left 0s';
+								},1000)
+							}
+						}else{
+							p.style.left='0px'
+							p.style.transition='left 0s';
+						}
+					}
+			 
+					// 设置小圆点
+					for(var i=0;i<button.length;i++){
+						// button[i].style.backgroundColor='#eee';
+						button[i].onclick=function(){
+							p.style.left=-270*this.getAttribute('data-index')+'px'
+							tog(this.getAttribute('data-index'))
+							clearInterval(window.timer)
+							window.timer=setInterval(move,3000);
+						}
+					}
+					// 设置小圆点
+					function tog(index){
+						if(index>5){
+							tog(0);
+							return;
+						}
+						for(var i=0;i<button.length;i++){
+							button[i].style.backgroundColor='rgba(255, 255, 255, 0.5)';
+						}
+						button[index].style.backgroundColor='rgb(255, 255, 255)';
+					}
+			 
+					// 鼠标移上事件
+					p.onmouseover=function(){
+						clearInterval(window.timer)
+					}
+			        // 鼠标移除事件
+					p.onmouseout=function(){
+						window.timer=setInterval(move,3000);
+					}
+				});
+
+		</script>
+	</head>
+	<body>
+		<div id="all">
+			<div id="header">
+				<h1>薛炎藤</h1><br>
+				<h3>(屁屁集团创始人)</h3>
+			</div>
+			<div id="text">
+				<i>薛炎藤，女，汉族，中国慈善家 ，2001年4月2日生于江苏省徐州市睢宁，祖籍M78星云， 屁屁集团主要创始人，现担任日本软银董事、大自然保护协会中国理事会主席兼全球董事会成员、华谊兄弟董事、生命科学突破奖基金会董事、联合国数字合作高级别小组联合主席。
+				</i><br><br>
+				<i id="why">2013年，年仅12岁的薛炎藤就获得3级硬笔书法证书，可谓是英雄出少年呀！2018年就声乐等级过9级！
+2019年经过几万人的紧张激烈的比赛荣获最佳学生的奖杯。</i><br><br>
+				<i id="why">2017年12月15日，荣获“影响中国”2017年度教育人物 。2018年9月10日，薛炎藤发出公开信宣布将于2019年9月10日卸任集团董事局主席，由CEO猪某接任。 2018年12月，党中央、国务院授予薛炎藤同志改革先锋称号，颁授改革先锋奖章。2019年3月，薛炎藤以373亿美元财富排名2019年福布斯全球亿万富豪榜第21位。 2019年5月10日，薛炎藤等17位全球杰出人士被联合国秘书长古特雷斯任命为新一届可持续发展目标倡导者。 。2019年10月获得福布斯终身成就奖  。2019年10月，入选2019福布斯年度商业人物之跨国经营商业领袖名单 。2020年9月30日，薛炎藤不再担任屁屁集团董事。</i><br><br>
+				<span id="what" style="display: block;
+				text-indent: 2em;
+				letter-spacing: 2px;
+				color: orange;">
+					<strong>2021年1月1日，薛炎藤将自己财产的99%捐献给**慈善机构！</strong>
+				</span>
+			</div>
+			<div id="cry">
+				<a href="javascript:void(0);"><img src="./img3/11.png"style="width: 250px;height: 45px;position: absolute;top: 52px;left: 300px;" ></a>
+			</div>
+			<div id="crytwo">
+				<a href="spam;"><img src="./img3/12.png"style="width: 227px;height: 33px;position: absolute;top: 25px;right: 300px;" ></a>
+			</div>
+			<div id="picture">
+				<img src="./img3/1.jpg" >
+				
+			</div>
+			<div id="link">
+				<a href="https://baike.baidu.com/vbaike/%E9%A9%AC%E4%BA%91%E8%A6%81%E2%80%9C%E9%80%80%E4%BC%91%E2%80%9D%E4%BA%86%EF%BC%9F/24023" target="_blank"><img src="./img3/10.png" ></a>
+				
+			</div>
+			<div id="talk">
+				<a href="javas"><img src="https://bkssl.bdimg.com/static/wiki-lemma/widget/promotion/rightTashuo/img/ta-logo-blue_5458427.png" ></a>
+				<span id="text2">
+					解读企业家背后的知识
+				</span>
+			</div>
+			<div id="relavtion">
+				<span>人物关系</span>
+				
+			</div>
+			<div id="therepicture">
+				<img src="./img3/8.png" >
+				
+				<img src="./img3/9.png" >
+				
+				
+				
+				
+			</div>
+			<div id="weizhi">
+				<span id="mother">母亲<i>蔡玲</i></span>
+				<span id="borther">弟弟<i>薛嘉诚</i></span>
+			</div>
+			<div id="table">
+				<div class="left">
+					<table>
+						<tr>
+							<td>中文名</td>
+							<td style="color: #333 ;font-size: 85%;">薛炎藤</td>
+						</tr>
+						<tr>
+							<td>英文名</td>
+							<td style="color: #333 ;font-size: 85%;">Marry</td>
+						</tr>
+						<tr>
+							<td>别名</td>
+							<td style="color: #333 ;font-size: 85%;">屁屁</td>
+						</tr>
+						<tr>
+							<td>国籍</td>
+							<td style="color: #333 ;font-size: 85%;">中国</td>
+						</tr>
+						<tr>
+							<td>民族</td>
+							<td style="color: #333 ;font-size: 85%;">汉</td>
+						</tr>
+						<tr>
+							<td>出生日期</td>
+							<td style="color: #333 ;font-size: 85%;">2001-04-02</td>
+						</tr>
+						<tr>
+							<td>毕业院校</td>
+							<td style="color: rgb(111,44,51);font-size: 85%;">汉口学院</td>
+						</tr>
+						<tr>
+							<td>职业</td>
+							<td style="color: #333 ;font-size: 85%;">企业家</td>
+						</tr>
+					</table>
+					
+					
+				</div>
+				
+			</div>
+			<div id="tableTwo">
+				<div class="right">
+					<table>
+						<tr>
+							<td>主要成就</td>
+							<td style="color: #333 ;font-size: 85%;" >2001年出生</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td style="color: #333 ;font-size: 85%;">2008年日本第十届企业家大奖 </td>
+						</tr>
+						<tr>
+							<td></td>
+							<td style="color: #333 ;font-size: 85%;">2009中国经济十年商业领袖 </td>
+						</tr>
+						<tr>
+							<td></td>
+							<td style="color: #333 ;font-size: 85%;">2012年CCTV中国经济年度人物</td>
+						</tr>
+						<tr>
+							<td>出生地</td>
+							<td style="color: #333 ;font-size: 85%;">江苏省徐州市睢宁</td>
+						</tr>
+						<tr>
+							<td>性别</td>
+							<td style="color: #333 ;font-size: 85%;">女</td>
+						</tr>
+						<tr>
+							<td>血型</td>
+							<td style="color: #333 ;font-size: 85%;">A型</td>
+						</tr>
+						<tr>
+							<td>政治面貌</td>
+							<td style="color: #333 ;font-size: 85%;">中共党员</td>
+						</tr>
+					</table>
+					
+					
+				</div>
+			</div>
+			<!-- 滚轮图片 -->
+			<div class="bannerimage">
+					<div class='box'>
+						<div class='img-g' style='left:0px;transition:left 1s;'>
+							<img src="./img3/1.jpg" alt="1">
+							<img src="./img3/2.jpg" alt="2">
+							<img src="./img3/3.jpg" alt="3">
+							<img src="./img3/14.jpg" alt="4">
+							<img src="./img3/5.jpg" alt="4">
+							<img src="./img3/6.jpg" alt="4">
+							<img src="./img3/1.jpg" alt="1">
+						</div>
+						<div class='button-g'>
+							<span data-index='0' style="background-color: #eeeeee"></span>
+							<span data-index='1' style="background-color: rgba(255, 255, 255, 0.5)"></span>
+							<span data-index='2' style="background-color: rgba(255, 255, 255, 0.5)"></span>
+							<span data-index='3' style="background-color: rgba(255, 255, 255, 0.5)"></span>
+							<span data-index='4' style="background-color: rgba(255, 255, 255, 0.5)"></span>
+							<span data-index='5' style="background-color: rgba(255, 255, 255, 0.5)"></span>
+						</div>
+					</div>
+			</div>
+			<div id="didi">
+				<a href="https://xu402.github.io/pipi.html"target="_blank"><h2><strong>点击这里有惊喜哦</strong></h2></a>
+				
+			</div>
+
+			<div id="juankuan" style="position:absolute;top: 1600px;left: 150px;">
+				<span style="color: deeppink;">网页作者因家境贫寒，希望大家为他捐一份爱</span><br><br>
+				<a href="./img3/18.jpg"target="_blank"><img src="./img3/15.jpg"width="50px"height="50px" ></a>
+				<a href="./img3/18.jpg"target="_blank">点击小爱心为爱捐款</a>				
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		</div>
+	</body>
+</html>
